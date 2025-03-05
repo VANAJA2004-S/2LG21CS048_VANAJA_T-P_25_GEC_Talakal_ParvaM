@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <h1 style="color: blue">JavaScript</h1>
+
+    <div>
+      <label>first operand</label>
+      <input
+        .
+        type="text"
+        .
+        id="txt1"
+        name="1 operand"
+        value=""
+        placeholder="enter your first operand"
+      />
+    </div>
+    <div>
+      <label>second operand</label>
+      <input
+        .
+        type="text"
+        .
+        id="txt2"
+        name="2 operand"
+        value=""
+        placeholder="enter your second operand"
+      />
+    </div>
+    <div>
+      <button onclick="getFullName()">submit</button>
+    </div>
+    <h1 style="color: rgb(80, 80, 100)" id="flname"></h1>
+
+    <script>
+      function getFullName() {
+        var fname = parseInt(document.getElementById("txt1").value);
+        var lname = parseInt(document.getElementById("txt2").value);
+        var fullname = fname + lname;
+        document.getElementById("flname").innerHTML = "Result:" + fullname;
+      }
+    </script>
+  </body>
+</html>
