@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 2px solid black;
+        margin: 2px;
+        padding: 40px;
+        border-collapse: collapse;
+        width: 50%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="txt1">value1</label>
+      <input
+        type="text"
+        id="val1"
+        name="val1"
+        value=""
+        placeholder="enter the value"
+      />
+    </div>
+    <div>
+      <label for="txt2">value2</label>
+      <input
+        type="text"
+        id="val2"
+        name="val2"
+        value=""
+        placeholder="enter the value"
+      />
+    </div>
+    <div>
+      <button onclick="getResult()">submit</button>
+    </div>
+
+    <div id="result">
+      <table>
+        <tr>
+          <th>X</th>
+          <th>Y</th>
+          <th>op</th>
+          <th>EXP</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+        function getResult() {
+          var val1 = document.getElementById("val1").value;
+          var val2 = document.getElementById("val2").value;
+          var result;
+          if (!isNaN(val1) && !isNaN(val2)) {
+          let resulta = parseFloat(val1) + parseFloat(val2);
+          let resultb = parseFloat(val1) - parseFloat(val2);
+          let resultm = parseFloat(val1) * parseFloat(val2);
+          let resultd = parseFloat(val1) / parseFloat(val2);
+          let  resultmod = parseFloat(val1) % parseFloat(val2);
+          let resultinc = parseFloat(val1)++;
+          let resultdec = parseFloat(val1)--;
+          }
+        }
+           result = `<table>
+            <table>
+          <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th>op</th>
+            <th>EXP</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td>${val1}</td>
+            <td>${val2}</td>
+            <td>+</td>
+            <td>>${val1}+${val2}</td>
+            <td>${resulta}</td>
+          </tr>
+          <tr>
+            <td>${val1}</td>
+            <td>${val2}</td>
+            <td>-</td>
+            <td>${val1}-${val2}</td>
+            <td>${resultb}</td>
+          </tr>
+          <tr>
+            <td>${val1}</td>
+            <td>${val2}</td>
+            <td>*</td>
+            <td>${val1}*${val2}</td>
+            <td>${resultm}</td>
+          </tr>
+          <tr>
+            <td>${val1}</td>
+            <td>${val2}</td>
+            <td>/</td>
+            <td>${val1}/${val2}</td>
+            <td>${resultd}</td>
+          </tr>
+          <tr>
+            <td>${val1}</td>
+            <td>${val2}</td>
+            <td>%</td>
+            <td>${val1}%${val2}</td>
+            <td>${resultmod}</td>
+          </tr>
+          <tr>
+            <td>${val1}</td>
+            <td>${val2}</td>
+            <td>++</td>
+            <td>${val1}++${val2}</td>
+            <td>${resultinc}</td>
+          </tr>
+            <tr>
+            <td>${val1}</td>
+            <td>${val2}</td>
+            <td>--</td>
+            <td>${val1}--${val2}</td>
+            <td>${resultdec}</td>
+          </tr>
+        </table>
+
+
+          } else {
+            result = val1 + val2;
+          }
+
+          document.getElementById("flname").innerHTML = result;
+        }
+      }
+    </script>
+  </body>
+</html>

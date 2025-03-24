@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Style the body */
+      body {
+        font-family: Arial;
+        margin: 0;
+        
+      }
+
+      /* Header/logo Title */
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: #1abc9c;
+        background-image: url(589407.jpg);
+        background-size: 100% 100%;
+        color:white;
+        font-size: 50px;
+        
+      }
+      
+
+      /* Style the top navigation bar */
+      .navbar {
+        display: flex;
+        background-color: #333;
+      }
+
+      /* Style the navigation bar links */
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      /* Change color on hover */
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Column container */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+
+      /* Main column */
+      .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+        background-image: url(orange.jpg);
+        background-size: 100% 100%;
+      }
+
+      /* Fake image, just for this example */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+      .dropdown {
+  position: relative;
+  display: inline-block;
+  border:3px solid white;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px blue;
+  padding: 12px 16px;
+  z-index: 100;
+  border:1px solid rgb(16, 15, 15);
+  margin: 2px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+      
+    </style>
+  </head>
+  <body>
+    <!-- Note -->
+    <div
+      style="
+        background: yellow;
+        padding: 5px;
+        background-image: url(589407.jpg);
+      "
+    >
+      <h4
+        style="
+          text-align: center;
+          background-color: white;
+          background-image: url("image.png");
+        "
+      ></h4>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1 title="The Beauty">Fitzroy Island</h1>
+      <p>Fitzroy Island Day Tours</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">WHERE TO GO</button>
+        <div class="dropdown-content">
+          <a href="https://r.search.yahoo.com/_ylt=AwrKAy9ehsFn.QEAn.K7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1741945694/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fKoppal/RK=2/RS=Ti.JK4FWtNgDH.PumUPH9pXWiyQ-">MooreRef</a>
+          <a href="#">FitzoryIsland</a>
+          <a href="#">HalfDayRef</a>
+        </div>
+      </div>
+            <div class="dropdown">
+        <button class="dropbtn">WHAT TO DO</button>
+        <div class="dropdown-content">
+          <a href="#">Diving</a>
+          <a href="#">Swimming</a>
+          <a href="#">Ziplining</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">PLAN YOUR TRIP</button>
+        <div class="dropdown-content">
+          <a href="#">Prices</a>
+          <a href="#">GettingHere</a>
+          <a href="#">Faqs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">ABOUT</button>
+        <div class="dropdown-content">
+          <a href="#">Guide</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+      <div class="side">
+        <h2>ISLAND VALUE PACKAGE</h2>
+        <h5>Island Value Package
+          Adult $145 | Child $95 | Family $385
+          
+          Sunlover’s “Island Value” package presents the best value for high-quality island experience.
+          
+          Plus your choice of 2 of the following:
+          
+          Premium Buffet Lunch in the Fitzroy Island Resort Restaurant Zephyrs
+          Glass bottom boat tour
+          Snorkelling equipment hire (mask, fins, snorkel, buoyancy vest, lycra suit).
+          Awesome optional extras (Turtle Talk, Nature Walk, Rainforest Walk and Kayak Tours) are available to add on at an additional cost.</h5>
+        <div class="fakeimg" style="height: 200px;    background-image: url(orange.jpg);background-size:100% 100%;background-repeat:no-repeat">
+          <img src="wow.jpg" title="ABOUT MY SELF(FitzoryIsland)"/>
+        </div>
+        <p>
+          <div class="dropdown">
+            <button class="dropbtn" style="font-size: 10px;">BOOK</button>
+            <div class="dropdown-content">
+              <a href="https://r.search.yahoo.com/_ylt=AwrKAy9ehsFn.QEAn.K7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1741945694/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fKoppal/RK=2/RS=Ti.JK4FWtNgDH.PumUPH9pXWiyQ-">MooreRef</a>
+              <a href="#">FitzoryIsland</a>
+              <a href="#">HalfDayRef</a>
+            
+          </div></p>
+       
+        
+        
+      </div>
+      <div class="main">
+        <h2>ISLAND ESSENTIAL PACKAGES</h2>
+        <h5>Adult $115 | Child $71 | Family $301
+
+          Keeping it simple and fun – the perfect destination for a day of relaxation and adventure on the beautiful and famous, Fitzroy Island.
+          
+          Sunlover’s “Island Essential” Package offers a competitive price for your choice of on-island extras; and includes return boat transfers. 
+          
+          Plus your choice of 1 of the following:
+          
+          Glass bottom boat tour
+          Snorkelling equipment hire (mask, fins, snorkel, buoyancy vest, lycra suit).
+          Awesome optional extras (Turtle Talk, Nature Walk, Rainforest Walk and Kayak Tours) are available to add on at an additional cost.</h5>
+        <div class="fakeimg" style="height: 200px">
+          <img src="children2.jpg".jpg" title="JOYFUL PLAY"/>
+        </div>
+        <p>
+          <div class="dropdown">
+            <button class="dropbtn" style="font-size: 10px;">BOOK</button>
+            <div class="dropdown-content">
+              <a href="https://r.search.yahoo.com/_ylt=AwrKAy9ehsFn.QEAn.K7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1741945694/RO=10/RU=https%3a%2f%2fen.wikipedia.org%2fwiki%2fKoppal/RK=2/RS=Ti.JK4FWtNgDH.PumUPH9pXWiyQ-">MooreRef</a>
+              <a href="#">FitzoryIsland</a>
+              <a href="#">HalfDayRef</a>
+            
+          </div></p>
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco.
+        </p>
+        <br />
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2024</h5>
+        <div class="fakeimg" style="height: 200px">Image</div>
+        <p>Some text..</p>
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco.
+        </p>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+
